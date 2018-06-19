@@ -2,9 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+
+<script type="text/javascript">
+    // var cylinder = {
+    //     pi: 3.14,
+    //     volume: function (r, h) {
+    //         return this.pi * r * r * h;
+    //     }
+    // };
+    //
+    // console.log(cylinder.volume.call({pi: 3.14159}, 2, 6));
+    // console.log(cylinder.volume.apply({pi: 3.14159}, [2, 6]));
+    // var newVolume = cylinder.volume.bind({pi: 3.14159});
+    // console.log(newVolume(2,6));
+
+
+    // var a = 10;
+    //
+    // function Foo() {
+    //     if (true) {
+    //         let a = 4;
+    //     }
+    //
+    //     alert(a); // alerts '10' because the 'let' keyword
+    // }
+    // Foo();
+
+    //A closure is a function that returns another function and wraps data
+    // function generator(input) {
+    //     var index = 0;
+    //     return {
+    //         next: function() {
+    //             if (index < input.length) {
+    //                 index += 1;
+    //                 return input[index - 1];
+    //             }
+    //             return "";
+    //         }
+    //     }
+    // }
+    //
+    // var mygenerator = generator("boomerang");
+    // console.log(mygenerator.next()); // returns "b"
+    // console.log(mygenerator.next()); // returns "o"
+    // mygenerator = generator("toon");
+    // console.log(mygenerator.next());  // returns "t"
+
+
+    // function Foo(){
+    //     console.log(this.a);
+    //     // console.log(this);
+    // }
+    // var food = {a: "Magical this"};
+    // Foo.call(food); // food is this
+    // Foo();
+
+
+    // var person = {
+    //     name: "Stranger",
+    //     age: 24,
+    //     get identity() {
+    //         return {who: this.name, howOld: this.age};
+    //     },
+    //     set values(name) {
+    //         var words = name.split(' ');
+    //         this.name = words[0];
+    //         this.age = words[1];
+    //         return {who: this.name, howOld: this.age};
+    //     }
+    // }
+    //
+    // person.values = 'AdnanBoota 25';
+    // console.log(person.identity);
+
+    var marks = {physics: 98, maths:95, chemistry: 91};
+    // console.log(JSON.stringify(marks));
+    // console.log(JSON.parse('{"physics":98,"maths":95,"chemistry":91}'));
+
+    console.log(Object.values(marks));
+
+    // var highScore = 0;
+    // for (i of Object.keys(marks)) {
+    //     console.log(marks[i]);
+    //     if (marks[i] > highScore)
+    //         highScore = marks[i];
+    // }
+    // console.log(highScore);
+
+
+</script>
 </body>
 </html>
